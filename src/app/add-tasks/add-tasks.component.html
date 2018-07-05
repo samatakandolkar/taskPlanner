@@ -1,0 +1,46 @@
+
+<div class="add-task-title col-sm-12 text-center">ADD TASK DETAILS</div>
+<form [formGroup]="taskAddForm" style="border: 1px solid white; padding: 15px;" (ngSubmit)="onSubmit(taskAddForm)">
+  <div class="form-group" *ngIf="successMessage || errorMessage">
+    <label class="col-md-12 alert-success msg-box" *ngIf="successMessage"> Task Succesfully Added. </label>
+    <label class="col-md-12 alert-danger msg-box" *ngIf="errorMessage"> Please fill all mandatory fields. </label>
+  </div>
+  <div class="form-group">
+    <label class="col-md-12">Name: <span class="required-field">*</span></label>
+      <input class="form-control col-md-11" formControlName="taskName" placeholder="Enter Task Name" required>
+    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="form-error">
+      <div *ngIf="name.errors.required">
+        Name is required.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-md-12">Description: <span class="required-field">*</span></label>
+    <input class="form-control col-md-11" formControlName="taskDescription" placeholder="Enter Task Description" required>
+    <div *ngIf="description.invalid && (description.dirty || description.touched)" class="form-error">
+      <div *ngIf="description.errors.required">
+        Description is required.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-md-12">Status: <span class="required-field">*</span></label>
+    <select class="form-control col-md-3"  formControlName="taskStatus">
+      <option [ngValue]="status" *ngFor="let status of statusArray">
+        {{status}}
+      </option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="col-md-12">Complition Date: <span class="required-field">*</span></label>
+    <ng-datepicker formControlName="taskCompletionDate" [options]="options"> </ng-datepicker>
+  </div>
+
+  <div class="form-group row row-fix">
+    <button  class="col-md-4 l-p-0 offset-md-1 reset-btn" (click)="taskAddForm.reset();onReset();" type="button">RESET </button>
+    <button class="col-md-4 l-p-0 offset-md-1 submit-btn" type="submit">SUBMIT </button>
+  </div>
+</form>
+
+
+

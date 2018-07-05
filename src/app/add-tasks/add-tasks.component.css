@@ -1,0 +1,73 @@
+.row-fix {
+  margin-left: 0px;
+  padding-left: 15px;
+  padding-top: 5px
+}
+
+.l-p-0 {
+  padding-left: 0 !important; ;
+}
+
+.form-error {
+  color:red;
+  font-size: 12px;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+label {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.add-task-title {
+  border: 1px solid white;
+  padding: 15px;
+  margin-bottom: 5px;
+  color: #fff;
+  background-color: #098098;
+  border-color: #098098;
+  font-weight: bold;
+}
+
+
+.required-field {
+  color:red;
+}
+
+.submit-btn {
+  color: #fff;
+  background-color: #098098;
+  border-color: #098098;
+  border:none;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.reset-btn {
+  border-color: #098098;
+  padding: 8px;
+  border-radius: 4px;
+  color: #098098;
+  border:1px solid;
+}
+
+.ngx-datepicker-container >.ngx-datepicker-input {
+  padding: 0;
+}
+
+:host /deep/ .ngx-datepicker-container > .ngx-datepicker-calendar-container {
+  position: absolute ;
+  width: 300px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,.08);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.08);
+  border: 1px solid #dfe3e9;
+  border-radius: 4px;
+  z-index: 1 !important;
+}
+
+.msg-box {
+  padding: 5px;
+  text-align: center;
+}

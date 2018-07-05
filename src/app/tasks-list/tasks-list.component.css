@@ -1,0 +1,53 @@
+.table .thead-dark th {
+  color: #fff;
+  background-color: #098098;
+  border-color: #098098;
+}
+
+.pending-task {
+  background-color: red;
+  border-color: red;
+}
+
+.closed-task {
+  background-color: lightgreen;
+  border-color: lightgreen;
+}
+
+.open-task {
+  background-color: orange;
+  border-color: orange;
+}
+
+.inprogress-task {
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+}
+
+.close-task-indicator {
+  margin: 10px;
+  padding: 5px 10px;
+  border: 1px solid lightgreen;
+  background-color: lightgreen
+}
+
+.open-task-indicator {
+  margin: 10px;
+  padding: 5px 10px;
+  border: 1px solid orange;
+  background-color: orange;
+}
+
+.inprogress-task-indicator {
+  margin: 10px;
+  padding: 5px 10px;
+  border: 1px solid cornflowerblue;
+  background-color: cornflowerblue;
+}
+
+.pending-task-indicator {
+  margin: 10px;
+  padding: 5px 10px;
+  border: 1px solid red;
+  background-color: red;
+}
