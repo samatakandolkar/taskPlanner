@@ -1,0 +1,83 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #F1F2F7 !important;
+  margin: 0;
+}
+
+.main-body {
+  min-height: 600px;
+}
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  color: #009488;
+  font-weight: bold;
+  font-size: 24px
+}
+
+.navbar-brand:hover {
+  color: #009488;
+}
+
+.jumbotron {
+  padding: 0;
+}
+
+.nav {
+  padding-top: 10px;
+}
+
+.main-menu > .nav-item {
+  padding: 5px;
+  background-color: #098098;
+  color: white;
+  margin: 2px;
+}
+
+.main-menu > .nav-item:hover {
+  background-color: #009377;
+}
+
+.nav-item a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.menu-title {
+  font-size: 20px;
+  color: #098098;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 8px 6px -6px grey;
+}
+
+.menu-tabs {
+  padding-bottom: 10px;
+}
+
+.menu-tabs > .nav-item {
+  padding: 0px 10px;
+  background-color: #2B8954;
+  color: white;
+  margin: 2px;
+  font-size: 12px
+}
+
+.menu-tabs > .nav-item:hover {
+  background-color: #33AE75;
+}
+
+.menu-tabs .active {
+  background-color: #33AE75;
+}
+
+
